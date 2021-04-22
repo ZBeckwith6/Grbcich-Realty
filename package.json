@@ -1,0 +1,23 @@
+{
+  "name": "grbcich-realty",
+  "version": "1.0.0",
+  "description": "Will Grbcich's real estate  website",
+  "main": "index.html",
+  "scripts": {
+    "start": "node lib/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZBeckwith6/Grbcich-Realty.git"
+  },
+  "author": "Zach Beckwith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZBeckwith6/Grbcich-Realty/issues"
+  },
+  "homepage": "https://github.com/ZBeckwith6/Grbcich-Realty#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
