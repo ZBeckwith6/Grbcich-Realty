@@ -1,7 +1,247 @@
-.jumbotron {
-    margin-bottom: 0px;
-}
-
+/*-- Body Reset --*/
 body {
-    font-family: 'Lora', serif;
-}
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    color: #616971;
+  }
+  
+  /*============= TOP BAR HEADER =============*/
+  
+  .top-bar {
+      background: linear-gradient(90deg, rgba(197,200,212,1) 0%, rgba(130,152,209,1) 42%, rgba(89,128,215,1) 75%);
+      height: 2.8rem;
+      padding: .5rem 0;
+  }
+
+  .top-bar a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+  }
+  
+  /*============= NAVIGATION =============*/
+  
+  .navbar-brand img {
+      height: 8rem;
+  }
+
+  .navbar {
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: .1rem;
+      box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .3);
+      z-index: 1;
+  }
+
+  .nav-link {
+      color: #5b5555!important;
+  }
+  .nav-link.active,
+  .nav-link:hover {
+      color: #4981b3!important;
+  }
+  
+  /*============= CAROUSEL =============*/
+  
+  #carousel {
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .3);
+  }
+  .carousel-inner {
+      max-height: 38rem!important;
+  }
+  
+  /*---Change Carousel Transition Speed --*/
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+      transition: transform 1.2s ease;
+  }
+  
+  /*-- Carousel Content --*/
+  .bg-custom {
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    border-radius: 1rem;
+ }
+  .carousel-caption {
+      position: absolute;
+      top: 54%;
+      transform: translateY(-50%);
+      text-transform: uppercase;
+  }
+
+  .carousel-caption h1 {
+    font-size: 3.8rem;  
+    text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1);
+  }
+
+  .border-primary {
+      border-top: .2rem solid #4981b3!important;
+  }
+
+  .carousel-caption h3 {
+    font-size: 2.2rem;  
+    text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 1);
+  }
+  
+  .btn-lg {
+      border-radius: 0;
+      text-transform: uppercase;
+      font-size: 1rem;
+      border-width: medium;
+  }
+
+  .btn-danger {
+      background-color: #ac2615;
+      border: .05rem solid #ac2615;
+  }
+
+  .btn-primary {
+      background-color: #4981b3;
+      border: .05rem solid #4981b3;
+  }
+
+  .btn-primary:hover,
+  .btn-primary:focus {
+      background-color: #68a0d2!important;
+      border: .05rem solid #68a0d2!important;
+  }
+
+  #tilePictures {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  #hlOffice {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+  }
+  
+  /*===== FIXED BACKGROUND IMG =====*/
+  
+  .fixed {
+    background-image: url('../img/downtownStl.jpg');
+  }
+  
+  .fixed-background {
+      padding: 10rem 0;
+  }
+  
+  /*-- Emoji Navbar --*/
+  
+  
+  
+  /*============= FOOTER =============*/
+  
+  footer {
+      background-color: #383838;
+      padding: 1rem 2rem 3rem;
+  }
+  footer img {
+      height: 200px;
+      margin: 10px auto;
+  }
+  footer p, footer a {
+      color: white;
+      text-decoration: none;
+  }
+  ul.social {
+      list-style-type: none;
+      display: flex;
+      max-width: 10rem;
+      margin: 0 auto;
+      padding: 0;
+      font-size: 2rem;
+  }
+  ul.social li {
+      margin: 0 auto;
+  }
+  footer .svg-inline--fa {
+      font-size: 2.5rem;
+  }
+  footer .svg-inline--fa:hover {
+      color: #68a0d2;
+  }
+  
+  
+  
+  /*============= MEDIA QUERIES =============*/
+  
+  /* Devices under 1199px (xl) */
+  @media (max-width: 1199.98px) {
+    .carousel-caption h1 {
+        font-size: 2.8rem;
+      }
+    .carousel-caption h3 {
+      font-size: 1.8rem;
+    }
+  }
+  /* Devices under 992px (lg) */
+  @media (max-width: 991.98px) {
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+      }
+    .carousel-caption h3 {
+      font-size: 1.5rem;
+    }
+    .btn-lg {
+        font-size: .95rem;
+    }
+  }
+  
+  
+  /*============ BOOTSTRAP BREAK POINTS:
+  
+  Extra small (xs) devices (portrait phones, less than 576px)
+  No media query since this is the default in Bootstrap
+  
+  Small (sm) devices (landscape phones, 576px and up)
+  @media (min-width: 576px) { ... }
+  
+  Medium (md) devices (tablets, 768px and up)
+  @media (min-width: 768px) { ... }
+  
+  Large (lg) devices (desktops, 992px and up)
+  @media (min-width: 992px) { ... }
+  
+  Extra (xl) large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... }
+  
+  =============*/
+  
+  /*-- Bootstrap Mobile Gutter Fix --*/
+  .row, .container-fluid {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  
+  /*-- Fixed Background Image --*/
+  .fixed-background {
+    position: relative;
+    width: 100%;
+    z-index: 1000!important;
+  }
+  .fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999 !important;
+  }
+  .fixed {
+    z-index: -999!important;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+  }
