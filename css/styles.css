@@ -123,6 +123,7 @@ body {
   
   .fixed {
     background-image: url('../img/downtownStl.jpg');
+    position: fixed;
   }
   
   .fixed-background {
