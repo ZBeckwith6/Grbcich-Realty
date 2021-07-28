@@ -124,6 +124,26 @@ body {
     height: 600px;
     object-fit: cover;
   }
+
+  /* Form Validation */
+
+  input.invalid {
+    border: 1px solid red;
+  }
+
+  .error-hint {
+    color: red;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .thank-you {
+    padding: 40px;
+    font-size: 32px;
+    text-align: center;
+  }
   
   /*===== FIXED BACKGROUND IMG =====*/
   
