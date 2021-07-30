@@ -127,6 +127,10 @@ body {
 
   /* Form Validation */
 
+  /* .form-group {
+    margin-bottom: 20px;
+  } */
+
   input.invalid {
     border: 1px solid red;
   }

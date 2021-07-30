@@ -82,54 +82,52 @@
     <div class="container mt-3">
       <form>
         <div class="form-group row">
-          <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+          <label for="firstName" class="col-md-2 col-form-label">*First Name</label>
           <div class="col-md-10">
-            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required />
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
           </div>
         </div>
         <div class="form-group row">
-          <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+          <label for="lastName" class="col-md-2 col-form-label">*Last Name</label>
           <div class="col-md-10">
-            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required />
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
           </div>
         </div>
         <div class="form-group row">
-          <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
-          <div class="col-5 col-md-3">
-            <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" required />
-          </div>
+          <label for="telephone" class="col-md-2 col-form-label">*Contact Tel.</label>            
           <div class="col-7">
-            <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" required />
+            <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="(###) ###-####" />
           </div>
         </div>
         <div class="form-group row">
-          <label for="email" class="col-md-2 col-form-label">Email</label>
+          <label for="email" class="col-md-2 col-form-label">*Email</label>
           <div class="col-md-10">
-            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required />
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
           </div>
         </div>
         <div class="form-group row">
           <label class="col-md-2 col-form-label" for="address1">*Address 1:</label>
           <div class="col-sm-10">
-            <input type="password" class="form-control" id="address1" required>
+            <input type="password" class="form-control" id="address1" />
           </div>
         </div>
         <div class="form-group row">
           <label class="col-md-2 col-form-label" for="address2">Address 2:</label>
           <div class="col-6 col-md-4">
-            <input type="password" class="form-control" id="address2" required>
+            <input type="password" class="form-control" id="address2" />
           </div>
         </div>
         <div class="form-group row">
           <label class="col-md-2 col-form-label" for="city">*City:</label>  
           <div class="col-6 col-md-4">
-            <input type="text" class="form-control" id="city" required>
+            <input type="text" class="form-control" id="city" />
           </div>
         </div>  
         <div class="form-group row">
           <label class="col-md-2 col-form-label" for="selectState">*State:</label>
             <div class="col-6 col-md-4">
               <select class="form-control" id="selectState">
+                <option class="active" value="-">----</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -181,13 +179,13 @@
                 <option value="WV">West Virginia</option>
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
-              </select required>
+              </select>
           </div>
         </div>
         <div class="form-group row">
           <label class="col-md-2 col-form-label" for="zipCode">*Zip/Postal Code:</label>
           <div class="col-5 col-md-3">
-            <input type="password" class="form-control" id="zipCode" required>
+            <input type="password" class="form-control" id="zipCode">
           </div>
         </div>
         <div class="form-group row">
