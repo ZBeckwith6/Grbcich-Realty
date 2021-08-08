@@ -127,10 +127,6 @@ body {
 
   /* Form Validation */
 
-  /* .form-group {
-    margin-bottom: 20px;
-  } */
-
   input.invalid {
     border: 1px solid red;
   }
@@ -165,35 +161,126 @@ body {
   /*============= FOOTER =============*/
   
   footer {
+      position: relative;
       background-color: #383838;
-      padding: 1rem 2rem 3rem;
-  }
-  footer img {
-      height: 100px;
-      margin: 10px auto;
-  }
-  footer p, footer a {
-      color: white;
-      text-decoration: none;
-  }
-  ul.social {
-      list-style-type: none;
+      padding: 50px 100px;
+      width: 100%;
+      height: auto;
       display: flex;
-      max-width: 10rem;
-      margin: 0 auto;
-      padding: 0;
-      font-size: 2rem;
+      justify-content: space-between;
+      flex-wrap: wrap;
   }
-  ul.social li {
-      margin: 0 auto;
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
-  footer .svg-inline--fa {
-      font-size: 2.5rem;
+  footer .container .sec {
+    margin-right: 30px;
   }
-  footer .svg-inline--fa:hover {
-      color: #68a0d2;
+  footer .container h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
   }
-  
+  footer .container h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 80px;
+    height: 2px;
+    background: #4981b3;
+  }
+  footer p {
+    color: #fff;
+  }
+  .sci {
+    margin-top: 20px;
+  }
+  .sci li {
+    list-style: none;
+  }
+  .sci li a {
+    list-style-type: none;
+    max-width: 10rem;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 2rem;
+  }
+  .sci li a:hover {
+    background: #4981b3;
+  }
+  .sci li a .fa {
+    color: #fff;
+    font-size: 20px;
+  }
+  .quickLinks{
+    position: relative;
+    width: 25%;
+  }
+  .quickLinks ul li {
+    list-style: none;
+  }
+  .quickLinks ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  .quickLinks ul li a:hover {
+    color: #fff;
+  }
+  .contact {
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+  }
+  .contact .info {
+    position: relative;
+  }
+  .contact .info li {
+    display: flex;
+    margin-bottom: 16px;
+  }
+  .contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .contact .info li span {
+    color: #fff;
+  }
+  .contact .info li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .contact .info li a:hover {
+    color: #fff;
+  }
+  @media (max-width: 991px) {
+    footer {
+      padding: 40px;
+    }
+    footer .container {
+      flex-direction: column;
+    }
+    footer .container .sec {
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+    footer .container .sec.socials, .quickLinks, .contact {
+      width: 100%;
+    }
+  }
+  .footerLogo {
+    width: 100%;
+    background-color: #383838;
+    padding: 8px 100px;
+    text-align: center;
+  }
+
   
   
   /*============= MEDIA QUERIES =============*/
