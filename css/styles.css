@@ -157,7 +157,6 @@ body {
   }
   
   
-  
   /*============= FOOTER =============*/
   
   footer {
@@ -199,15 +198,21 @@ body {
   }
   .sci {
     margin-top: 20px;
+    display: flex;
   }
   .sci li {
     list-style: none;
   }
   .sci li a {
+    color: #fff;
     list-style-type: none;
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     max-width: 10rem;
     margin: 0 auto;
-    padding: 0;
+    padding: 10px;
     font-size: 2rem;
   }
   .sci li a:hover {
@@ -229,6 +234,8 @@ body {
     text-decoration: none;
     margin-bottom: 10px;
     display: inline-block;
+    padding: 5px;
+    font-size: 15px;
   }
   .quickLinks ul li a:hover {
     color: #fff;
@@ -304,6 +311,24 @@ body {
     }
     .btn-lg {
         font-size: .95rem;
+    }
+  }
+  /* Devices under 768px (xs) */
+  @media (max-width: 767.98px) {
+    .carousel-caption h1 {
+        font-size: 1.05rem;
+      }
+    .carousel-caption h3 {
+      font-size: .65rem;
+    }
+    .carousel-caption p {
+      font-size: .55rem;
+    }
+    .btn-lg {
+        font-size: .50rem;
+    }
+    .btn-danger {
+        padding-bottom: .75rem;
     }
   }
   
